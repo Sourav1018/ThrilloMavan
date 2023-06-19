@@ -1,0 +1,3 @@
+search context have 2 methods .
+1. findElement(By by) - returns WebElement.
+2. findElements(By by) - returns List<WebElement>
