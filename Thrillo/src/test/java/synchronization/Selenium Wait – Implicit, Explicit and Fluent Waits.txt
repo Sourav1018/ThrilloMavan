@@ -1,0 +1,44 @@
+When a web page loads on a browser, various web elements (buttons, links, images) that someone wants to interact with may load at various intervals.
+=================
+Selenium WebDriver provides three commands to implement waits in tests.
+
+    Implicit Wait
+    Explicit Wait
+    Fluent Wait
+===================
+Implicit Wait in Selenium
+
+Implicit Wait directs the Selenium WebDriver to wait for a certain measure of time before throwing an exception. Once this time is set, WebDriver will wait for the element before the exception occurs.
+
+Once the command is in place, Implicit Wait stays in place for the entire duration for which the browser is open. It’s default setting is 0, and the specific wait time needs to be set by the following protocol.
+====================
+Explicit Wait in Selenium
+
+By using the Explicit Wait command, the WebDriver is directed to wait until a certain condition occurs before proceeding with executing the code.
+
+Setting Explicit Wait is important in cases where there are certain elements that naturally take more time to load. If one sets an implicit wait command, then the browser will wait for the same time frame before loading every web element. This causes an unnecessary delay in executing the test script.
+
+Explicit wait is more intelligent, but can only be applied for specified elements. However, it is an improvement on implicit wait since it allows the program to pause for dynamically loaded Ajax elements.
+
+In order to declare explicit wait, one has to use ExpectedConditions. The following Expected Conditions can be used in Explicit Wait.
+
+    alertIsPresent()
+    elementSelectionStateToBe()
+    elementToBeClickable()
+    elementToBeSelected()
+    frameToBeAvaliableAndSwitchToIt()
+    invisibilityOfTheElementLocated()
+    invisibilityOfElementWithText()
+    presenceOfAllElementsLocatedBy()
+    presenceOfElementLocated()
+    textToBePresentInElement()
+    textToBePresentInElementLocated()
+    textToBePresentInElementValue()
+    titleIs()
+    titleContains()
+    visibilityOf()
+    visibilityOfAllElements()
+    visibilityOfAllElementsLocatedBy()
+    visibilityOfElementLocated()
+
+
