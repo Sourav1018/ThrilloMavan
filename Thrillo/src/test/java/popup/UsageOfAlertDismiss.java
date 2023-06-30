@@ -20,6 +20,6 @@ public class UsageOfAlertDismiss {
 		driver.switchTo().alert().dismiss();
 		String alertCancleButton = driver.findElement(By.id("demo")).getText();
 		System.out.println(alertCancleButton);
-		driver.quit();
+		driver.quit(); 
 	}
 }
